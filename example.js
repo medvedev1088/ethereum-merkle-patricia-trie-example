@@ -16,7 +16,7 @@ trie.checkRoot(root, function (err, val) {
 var stream = trie.createReadStream();
 
 stream.on('data', function (data) {
-  console.log('key:' + data.key.toString('hex'));
+  console.log('key:', data.key.toString('hex'));
 
   // values are rlp encoded
   var decodedVal = rlp.decode(data.value);

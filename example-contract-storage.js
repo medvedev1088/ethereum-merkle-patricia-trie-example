@@ -28,7 +28,7 @@ trie.get('0x' + addressHash, function (err, val) {
 
   // 3rd element in the array is storage root, 1st - nonce, 2nd - balance, 4th - codeHash
   var storageRoot = decodedVal[2];
-  console.log('storageRoot', storageRoot);
+  console.log('Storage root:', storageRoot);
 
   trie.root = storageRoot;
 
@@ -41,7 +41,8 @@ trie.get('0x' + addressHash, function (err, val) {
   var slotZeroHash = keccak256(new Buffer('0000000000000000000000000000000000000000000000000000000000000000', 'hex'));
   trie.get('0x' + slotZeroHash, function (err, val) {
     var decodedVal = rlp.decode(val);
-    console.log('Value at slot 0: ', decodedVal);
+    console.log('Value at slot 0 - key:', slotZeroHash);
+    console.log(decodedVal);
   });
 
   // Read all entries from contract storage
@@ -49,7 +50,7 @@ trie.get('0x' + addressHash, function (err, val) {
   var stream = trie.createReadStream();
 
   stream.on('data', function (data) {
-    console.log('key:' + data.key.toString('hex'));
+    console.log('key:', data.key.toString('hex'));
 
     // values are rlp encoded
     var decodedVal = rlp.decode(data.value);
