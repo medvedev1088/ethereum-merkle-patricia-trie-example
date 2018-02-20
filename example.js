@@ -18,7 +18,7 @@ var stream = trie.createReadStream();
 stream.on('data', function (data) {
   console.log('key:' + data.key.toString('hex'));
 
-  //accouts are rlp encoded
+  // values are rlp encoded
   var decodedVal = rlp.decode(data.value);
   console.log(decodedVal);
 });
