@@ -38,7 +38,7 @@ Example output:
 
 ```
 Root exists: true
-[ <Buffer 01>,
+Account data: 398A7A69f3c59181A1ffe34bed11DCb5DF863A8a [ <Buffer 01>,
   <Buffer >,
   <Buffer 24 21 83 63 90 de b4 32 ce 0e ac fe 5f 49 be 88 99 17 bf 8a fa 07 72 24 1c 30 9e 61 e0 4a 0d 42>,
   <Buffer 61 60 55 49 c9 7c 3e 7a d6 68 63 3b 72 b2 60 d3 00 5e ab be f3 22 a2 d6 33 2a 49 76 80 89 77 7a> ]
