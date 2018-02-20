@@ -32,7 +32,7 @@ Sometimes crashes with out-of-memory.
 ---
 
 example-contract-storage.js reads the Patricia trie of a particular contract.
-You need to change the path to your Ethereum chaindata store, he block state root and the address.
+You need to change the path to your Ethereum chaindata store, the block state root and the address.
 
 Example output:
 
