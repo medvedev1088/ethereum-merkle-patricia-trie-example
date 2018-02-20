@@ -1,0 +1,9 @@
+{
+  "name": "ethereum-merkle-patricia-trie-example",
+  "version": "1.0.0",
+  "dependencies": {
+    "merkle-patricia-tree": "^2.3.0",
+    "levelup": "^2.0.2",
+    "leveldown": "^3.0.0"
+  }
+}
