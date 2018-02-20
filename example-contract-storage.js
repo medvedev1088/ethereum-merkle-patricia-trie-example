@@ -21,7 +21,7 @@ trie.get('0x' + addressHash, function (err, val) {
   var decodedVal = rlp.decode(val);
   console.log(decodedVal);
 
-  if (decodedVal && decodedVal.length < 4) {
+  if (!decodedVal || decodedVal.length < 4) {
     console.log('The value for the address must be an array of 4 elements');
     return;
   }
