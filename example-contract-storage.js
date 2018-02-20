@@ -36,6 +36,16 @@ trie.get('0x' + addressHash, function (err, val) {
     console.log('Storage root exists:', val);
   });
 
+  // Read storage slot with index 0
+
+  var slotZeroHash = keccak256(new Buffer('0000000000000000000000000000000000000000000000000000000000000000', 'hex'));
+  trie.get('0x' + slotZeroHash, function (err, val) {
+    var decodedVal = rlp.decode(val);
+    console.log('Value at slot 0: ', decodedVal);
+  });
+
+  // Read all entries from contract storage
+
   var stream = trie.createReadStream();
 
   stream.on('data', function (data) {
