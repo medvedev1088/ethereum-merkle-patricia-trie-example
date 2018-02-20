@@ -2,7 +2,7 @@ var Trie = require('merkle-patricia-tree');
 var rlp = require('rlp');
 var levelup = require('levelup');
 var leveldown = require('leveldown');
-var db = levelup(leveldown('/Users/emedvedev/Library/Ethereum/rinkeby/geth/chaindata'));
+var db = levelup(leveldown('/your_home_dir/Library/Ethereum/rinkeby/geth/chaindata'));
 
 // the block state root, rinkeby, block number 1775804
 // the block state root can be obtained by invoking web3.eth.getBlock(<blockNumber>) in `stateRoot` field
