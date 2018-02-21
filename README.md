@@ -26,6 +26,8 @@ key: 00016a7e1a013fb93d632850f6af2dab61fe8db06a47f11a4e99170fa8bb5996
 ...
 ```
 
+Each value is an array of 4 elements: nonce, balance, storageRoot, codeHash.
+
 It takes some time to read the database before you can see the keys and values in the trie.
 Sometimes crashes with out-of-memory.
 
