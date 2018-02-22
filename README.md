@@ -47,6 +47,7 @@ Account data: 398A7A69f3c59181A1ffe34bed11DCb5DF863A8a [ <Buffer 01>,
 Storage root: <Buffer 24 21 83 63 90 de b4 32 ce 0e ac fe 5f 49 be 88 99 17 bf 8a fa 07 72 24 1c 30 9e 61 e0 4a 0d 42>
 Storage root exists: true
 Value at slot 0 - key: 290decd9548b62a8d60345a988386fc84ba6bc95484008f6362f93160ef3e563
+<Buffer 45 ab c9 ad 34 de a0 00 00>
 key: 0205d9ce8b4a26409d40486b0ac7b8dc356714e840016b19cc5c0f2c8adbcd74
 <Buffer 36 35 c9 ad c5 de a0 00 00>
 key: 0249d346d51fad5ef0b6fae89b4907e63c831f4f8af088d602baef47cda4eab7
