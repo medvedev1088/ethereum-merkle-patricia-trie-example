@@ -53,3 +53,5 @@ key: 0205d9ce8b4a26409d40486b0ac7b8dc356714e840016b19cc5c0f2c8adbcd74
 key: 0249d346d51fad5ef0b6fae89b4907e63c831f4f8af088d602baef47cda4eab7
 <Buffer 0a 07 64 07 d3 f7 44 00 00>
 ```
+
+Note that if you use geth version >1.8.0 you need to use `--gcmode=archive` or else geth will cleanup unused state.
